@@ -14,6 +14,9 @@
 		245D6B0621FE48090041413E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 245D6B0421FE48090041413E /* LaunchScreen.storyboard */; };
 		245D6B1121FE480A0041413E /* MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D6B1021FE480A0041413E /* MVVMTests.swift */; };
 		245D6B1C21FE480A0041413E /* MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D6B1B21FE480A0041413E /* MVVMUITests.swift */; };
+		245D6B2A21FE48BE0041413E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D6B2921FE48BE0041413E /* User.swift */; };
+		245D6B2C21FE497D0041413E /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D6B2B21FE497D0041413E /* UserViewModel.swift */; };
+		2460840E22078F7C0022AC61 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2460840D22078F7C0022AC61 /* Box.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		245D6B1721FE480A0041413E /* MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		245D6B1B21FE480A0041413E /* MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMUITests.swift; sourceTree = "<group>"; };
 		245D6B1D21FE480A0041413E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		245D6B2921FE48BE0041413E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		245D6B2B21FE497D0041413E /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		2460840D22078F7C0022AC61 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 			children = (
 				245D6AFB21FE48070041413E /* AppDelegate.swift */,
 				245D6AFD21FE48070041413E /* ViewController.swift */,
+				245D6B2B21FE497D0041413E /* UserViewModel.swift */,
+				245D6B2921FE48BE0041413E /* User.swift */,
+				2460840D22078F7C0022AC61 /* Box.swift */,
 				245D6AFF21FE48070041413E /* Main.storyboard */,
 				245D6B0221FE48090041413E /* Assets.xcassets */,
 				245D6B0421FE48090041413E /* LaunchScreen.storyboard */,
@@ -257,7 +266,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				245D6AFE21FE48070041413E /* ViewController.swift in Sources */,
+				2460840E22078F7C0022AC61 /* Box.swift in Sources */,
+				245D6B2C21FE497D0041413E /* UserViewModel.swift in Sources */,
 				245D6AFC21FE48070041413E /* AppDelegate.swift in Sources */,
+				245D6B2A21FE48BE0041413E /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,8 +444,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3MKUUZEFBH;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MVVM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -441,6 +453,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.bicycle2life.MVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,8 +463,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3MKUUZEFBH;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MVVM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,6 +472,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.bicycle2life.MVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
